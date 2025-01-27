@@ -17,7 +17,7 @@ jobs:
 
     - name: Prepare WordPress Zip
       run: |
-        WP_LINK=$(cat wp-_version-control.cfg)
+        WP_LINK=$(cat wp_version-control.cfg)
         wget -O "./wordpress.zip" $WP_LINK
 
     - name: Prepare plugins and theme zip
